@@ -26,9 +26,9 @@ cat << EOF
     </div>
     <div class="menu w-full flex-grow md:flex md:items-center md:w-auto">
       <div class="text-base md:flex-grow">
-        <a id="nav-home" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4" href="index.html">Home</a>
-        <a id="nav-login" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4" href="about.html">About</a>
-        <a id="nav-register" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4" href="resources.html">Resources</a>
+        <a class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4" href="index.html">Home</a>
+        <a class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4" href="about.html">About</a>
+        <a "block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4" href="resources.html">Resources</a>
       </div>
     </div>
   </div>
