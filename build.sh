@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Run automatically on detected changes.
+#
+# Linux:
+# while true; do inotifywait -e modify *.html templates/*; ./build.sh; done
+#
+# OSX:
+#
+# fswatch *.html templates/* | xargs -n1 -I{} ./build.sh
+
 mkdir -p _site
 
 ./templates/default "3ml Home" index.html > _site/index.html
