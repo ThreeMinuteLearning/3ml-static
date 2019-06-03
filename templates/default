@@ -3,7 +3,7 @@
 TITLE=$1
 FILE=$2
 
-BG_IMAGE="https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1933&amp;q=80"
+BG_IMAGE="https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1200&q=30"
 
 
 cat << EOF
@@ -15,7 +15,7 @@ cat << EOF
   <link rel="stylesheet" type="text/css" href="https://3ml.org.uk/app.css">
   <link rel="icon" type="image/png" href="https://3ml.org.uk//img/icon.png">
 </head>
-<body class="min-h-screen flex flex-col" style="background-image: url('$BG_IMAGE')">
+<body class="min-h-screen flex flex-col bg-cover" style="background-image: url('$BG_IMAGE')">
 <nav class="print:none bg-tml-blue mb-4">
   <div class="container px-2 py-2 mx-auto flex items-center justify-between flex-wrap">
     <div class="flex items-center flex-shrink-0 mr-8">
