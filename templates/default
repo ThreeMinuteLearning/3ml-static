@@ -31,6 +31,7 @@ cat << EOF
       <div class="text-base md:flex-grow">
         <a class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4" href="index.html">Home</a>
         <a class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4" href="about.html">About</a>
+        <a class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4" href="guidance.html">Guidance</a>
         <a class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4" href="resources.html">Resources</a>
       </div>
     </div>
