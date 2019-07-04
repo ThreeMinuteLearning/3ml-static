@@ -1,0 +1,30 @@
+#!/bin/bash
+
+set +x
+TARGET=$1
+
+[ -z $TARGET ] && TARGET=frontend
+
+CHANGES="No changes"
+
+
+function refresh_firefox {
+  windows="$(xdotool search --sync --all --onlyvisible --name firefox)"
+  for w in $windows; do
+    xdotool key --window "$w" "CTRL+R"
+  done
+}
+
+while true; do
+  echo -ne '\033c'
+  date +%H:%M:%S
+  echo $CHANGES
+
+  sleep 1
+  ./build.sh
+  make_result=$?
+
+  refresh_firefox
+
+  CHANGES=$(inotifywait -q --exclude '(_site|\.git|elm-stuff|\.#.*|\.ghc.*|flycheck_.*)' -r -e close_write -e modify -e delete -e create -e move .)
+done
