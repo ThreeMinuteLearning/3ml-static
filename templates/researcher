@@ -6,9 +6,9 @@ URL=$3
 BLURB=$4
 
 cat<<EOF
-<a href="$URL" target="_blank" rel="noopener noreferrer" class="w-full text-center text-grey-lighter rounded text-md bg-green hover:text-tml-blue">
+<a href="$URL" target="_blank" rel="noopener noreferrer" class="w-full md:w-5/12 text-center text-grey-lighter rounded text-md bg-green hover:text-tml-blue">
     <div class="w-full lg:flex my-10">
-        <div class="h-40 lg:h-32 lg:w-48 flex -none bg-auto bg-center bg-no-repeat rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('$IMG_URL')" title="$NAME">
+        <div class="h-40 lg:h-32 lg:w-48 flex-none bg-auto bg-center bg-no-repeat rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('$IMG_URL')" title="$NAME">
         </div>
         <div class="w-full border-b border-gray-400 border-t bg-white rounded-b p-4 flex justify-center leading-normal">
             <div class="mb-2 w-full text-left text-grey-lighter self-center py-1 px-3 rounded text-md bg-green hover:text-tml-blue">$BLURB</div>
