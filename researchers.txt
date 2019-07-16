@@ -1,0 +1,6 @@
+Jane Goodall,http://www.realscience.org.uk/3ml/img/janethumb2.jpg,http://www.realscience.org.uk/3ml/pdfs/QuestionsJaneGoodall.pdf,Jane Goodall is the world's leading expert on wild chimpanzees.
+Dawn Geatches,http://www.realscience.org.uk/3ml/img/dawnthumb.jpg,http://www.realscience.org.uk/3ml/pdfs/QuestionsDawnGeatches.pdf,Dawn Geatches is a scientist at Daresbury Laboratory. (Take a look at her story 'The In-betweeners').
+Valeria Losasso,http://www.realscience.org.uk/3ml/img/valeriathumb.jpg,http://www.realscience.org.uk/3ml/pdfs/QuestionsValeriaLosasso.pdf,Valeria Losasso is a scientist at Daresbury Laboratory.
+James Wilson,http://www.realscience.org.uk/3ml/img/jameswilsonthumb.jpg,http://www.realscience.org.uk/3ml/pdfs/QuestionsJamesWilson.pdf,James Wilson is an engineer at Daresbury Laboratory.
+James Gebbie,http://www.realscience.org.uk/3ml/img/jamesgebbiethumb.jpg,http://www.realscience.org.uk/3ml/pdfs/QuestionsJamesGebbie,James Gebbie is a computer scientist at Daresbury Laboratory.
+Chris Pearson,http://www.realscience.org.uk/3ml/img/chrispearsonthumb.jpg,http://www.realscience.org.uk/3ml/pdfs/QuestionsChrisPearson.pdf,Chris Pearson is an astronomer at RAL Space.

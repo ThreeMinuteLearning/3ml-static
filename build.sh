@@ -17,6 +17,9 @@ export HELP_VIDEOS="$(while IFS=',' read -r heading vurl; do
   ./templates/help_video "$heading" $vurl
 done < help_videos.txt)"
 
+export RESEARCHERS="$(while IFS=',' read -r researcher_name img_url pdf_url blurb; do
+  ./templates/researcher "$researcher_name" $img_url $pdf_url "$blurb"
+done < researchers.txt)"
 
 ./templates/default "3ml Home" index.html > _site/index.html
 ./templates/default "About 3ml" about.html > _site/about.html
