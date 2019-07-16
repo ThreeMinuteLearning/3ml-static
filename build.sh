@@ -20,5 +20,6 @@ done < help_videos.txt)"
 
 ./templates/default "3ml Home" index.html > _site/index.html
 ./templates/default "About 3ml" about.html > _site/about.html
-./templates/default "3ml Resources" resources.html > _site/resources.html
+./templates/default "Review Questions - Curriculum Topics" curriculum.html > _site/curriculum.html
+./templates/default "Review Questions - Researchers" researchers.html > _site/researchers.html
 ./templates/default "3ml Guidance" guidance.html > _site/guidance.html
