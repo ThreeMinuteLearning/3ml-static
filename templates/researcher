@@ -7,7 +7,7 @@ BLURB=$4
 
 cat<<EOF
 <a href="$URL" target="_blank" rel="noopener noreferrer" class="w-full md:w-1/2 text-md hover:text-tml-blue">
-    <div class="flex w-full md:w-11/12 md:mx-auto h-40 md:h-48 bg-white p-6 shadow-md mb-8">
+    <div class="flex w-full md:w-11/12 md:mx-auto h-40 md:h-48 bg-white p-6 shadow-md hover:shadow-xl mb-8">
       <div class="w-30 h-30 flex-none mr-3 sm:mr-5">
         <img class="rounded" src="$IMG_URL" alt="$NAME">
       </div>
