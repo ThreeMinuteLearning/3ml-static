@@ -26,3 +26,10 @@ done < researchers.txt)"
 ./templates/default "Review Questions - Curriculum Topics" curriculum.html > _site/curriculum.html
 ./templates/default "Review Questions - Researchers" researchers.html > _site/researchers.html
 ./templates/default "3ml Guidance" guidance.html > _site/guidance.html
+
+purgecss --config purgecss.config.js --out _site/
+
+pushd _site
+uglifycss 3ml-static.css > tmp.css
+mv tmp.css 3ml-static.css
+popd

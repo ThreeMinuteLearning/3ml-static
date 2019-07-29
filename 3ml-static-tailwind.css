@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('https://3ml.org.uk/img/nebula.jpg');
+  background-size: cover;
+}
