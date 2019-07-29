@@ -30,8 +30,8 @@ cat << EOF
         <a class="block mt-4 md:inline-block md:mt-0 text-teal-100 hover:text-white mr-4" href="about.html">About</a>
         <a class="block mt-4 md:inline-block md:mt-0 text-teal-100 hover:text-white mr-4" href="guidance.html">Guidance</a>
         <a class="block mt-4 md:inline-block md:mt-0 text-teal-100 hover:text-white mr-4" href="researchers.html">Resources</a>
-        <a class="block mt-4 md:inline-block md:mt-0 text-teal-100 hover:text-white mr-4" href="https://3ml.org.uk/#/login" target="_blank">Sign in</a>
-        <a class="block mt-4 md:inline-block md:mt-0 text-teal-100 hover:text-white mr-4" href="https://3ml.org.uk/#/register" target="_blank">Sign up</a>
+        <a class="block mt-4 md:inline-block md:mt-0 text-teal-100 hover:text-white mr-4" href="https://3ml.org.uk/app/#/login" target="_blank">Sign in</a>
+        <a class="block mt-4 md:inline-block md:mt-0 text-teal-100 hover:text-white mr-4" href="https://3ml.org.uk/app/#/register" target="_blank">Sign up</a>
       </div>
     </div>
   </div>
