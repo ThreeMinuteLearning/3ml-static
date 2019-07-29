@@ -5,4 +5,6 @@
 body {
   background-image: url('https://3ml.org.uk/img/nebula.jpg');
   background-size: cover;
+  /* get rid of unwanted horizontal scrollbar */
+  overflow-x: hidden;
 }
