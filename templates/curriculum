@@ -1,0 +1,20 @@
+#! /bin/bash
+
+NAME=$1
+IMG_URL=$2
+IMG_ALT=$3
+URL=$4
+
+
+cat<<EOF
+<a href="$URL" target="_blank" rel="noopener noreferrer" class="w-full md:w-1/2 text-md hover:text-tml-blue">
+    <div class="flex w-full md:w-11/12 md:mx-auto h-40 md:h-40 bg-white p-6 shadow-md hover:shadow-xl mb-8">
+        <div class="w-30 h-30 flex-none mr-3 sm:mr-5">
+            <img class="rounded" src="$IMG_URL" alt="$IMG_ALT">
+        </div>
+        <div class="text-left">
+            <h2 class="text-lg">$NAME</h2>
+        </div>
+    </div>
+</a>
+EOF
