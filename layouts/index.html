@@ -1,0 +1,67 @@
+{{ define "main" }}
+<div class="flex flex-wrap">
+    <h1 class="shadow-md w-full text-lg text-green-100 tracking-wide text-center bg-green-600 my-3 p-2">
+        Three Minute Learning is a social enterprise set up to improve literacy and promote real science in schools.
+    </h1>
+    {{- $image := resources.Get "images/timthumbs.jpg" }}
+    {{- $image = $image.Resize "800x webp"}}
+    <video controls class="w-full md:w-1/2 mb-4" poster="{{ $image.RelPermalink }}">
+        <source src="https://www.realscience.org.uk/3ml/vids/timpeake.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- Intro-->
+    <div class="text-lg text-justify w-full px-4 md:w-1/2 mt-1 mb-4">
+        <p class="mb-3">
+            <span class="font-bold">3ml</span> works like this:
+        </p>
+        <p class="mb-3">
+            First your pupils read a very short story, chosen - by you or them - from over 1000 in our library.
+            Then they complete four activities to help them understand and remember what they've read.
+        </p>
+        <p>
+            If you haven't used 3ml before with your pupils, please take a look at the short videos on our Guidance
+            page.
+        </p>
+    </div>
+    <!-- Sign up Banner -->
+    <div class="w-full mb-3 h-32">
+        <a class="relative block w-full h-full text-gray-100 hover:text-gray-400" href="https://3ml.org.uk/app/#/register" target="_blank">
+            <img class="inline-block object-top object-cover h-full w-full rounded" src="https://images.nasa.gov/images/landing_bg.jpg" alt="stars">
+            <div class="absolute inset-0 tracking-wider text-center mt-4">
+                <h1 class="text-2xl bold">Sign up and try it out!</h1>
+                <p class="text-lg mt-1">
+                    3ml is free to all SSERC member schools.
+                </p>
+            </div>
+        </a>
+    </div>
+    <!-- Sample Stories-->
+    <div id="storytiles" class="flex flex-wrap w-full -mx-1">
+        <div class="w-1/2 md:w-1/4 mb-2 h-32 lg:h-40 px-1">
+          <a href="https://3ml.org.uk/app/#/stories/1142" class="relative block shadow w-full h-full" title="Where I belong">
+            <img class="object-cover h-full w-full rounded" src="https://3ml.org.uk/thumbs/senseofcertainty.jpg" alt="Jane Goodall with a chimpanzee">
+            <h3 class="absolute px-2 pt-1 top-0 text-sm font-bold text-gray-100">Where I belong</h3>
+          </a>
+        </div>
+        <div class="w-1/2 md:w-1/4 mb-2 h-32 lg:h-40 px-1">
+          <a href="https://3ml.org.uk/app/#/stories/864" class="relative block shadow w-full h-full"
+                title="Hardy Martians">
+            <img class="object-cover h-full w-full rounded" src="https://3ml.org.uk/thumbs/57cc899bda43d.jpg" alt="Man in spacesuit on Mars">
+                <h3 class="absolute px-2 pt-1 top-0 text-sm font-bold text-gray-100">Hardy Martians</h3>
+            </a>
+        </div>
+        <div class="w-1/2 md:w-1/4 mb-2 h-32 lg:h-40 px-1">
+          <a href="https://3ml.org.uk/app/#/stories/897" class="relative block shadow w-full h-full" title="Dog TV">
+            <img class="object-cover h-full w-full rounded" src="https://3ml.org.uk/thumbs/5857d12062485.jpg" alt="A dog watching television">
+            <h3 class="absolute px-2 pt-1 top-0 text-sm font-bold text-gray-100">Dog TV</h3>
+          </a>
+        </div>
+        <div class="w-1/2 md:w-1/4 mb-2 h-32 lg:h-40 px-1">
+          <a href="https://3ml.org.uk/app/#/stories/876" class="relative block shadow w-full h-full" title="Under the sea">
+            <img class="object-cover h-full w-full rounded" src="https://3ml.org.uk/thumbs/57cf2264371b8.jpg" alt="Mountains under the sea">
+            <h3 class="absolute px-2 pt-1 top-0 text-sm font-bold text-gray-100">Under the sea</h3>
+          </a>
+        </div>
+    </div>
+</div>
+{{ end }}

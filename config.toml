@@ -1,0 +1,14 @@
+#baseURL = 'https://3ml.org.uk/'
+languageCode = 'en-gb'
+title = '3ml - Three Minute Learning'
+
+[params]
+  description = "Improving literacy and science learning in schools"
+
+
+[menu]
+[[menu.main]]
+  id = "resources"
+  name = "Resources"
+  pageRef = "/resources"
+  weight = 30
