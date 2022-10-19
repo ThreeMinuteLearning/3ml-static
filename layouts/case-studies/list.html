@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main>
+  <h1 class="w-full text-xl text-green-100 tracking-wide text-center bg-green-600 mb-4 mt-3 p-2">
+      Case studies of 3ml use in schools
+  </h1>
+  <div class="bg-white mt-3 mb-4">
+      <div class="flex flex-col lg:flex-row flex-wrap justify-between mt-5">
+        {{ range .Pages.ByWeight }}
+        <a href="{{ .RelPermalink }}" class="w-full lg:w-1/2 text-md hover:text-tml-blue">
+            <div class="flex items-center w-full lg:w-11/12 lg:mx-auto bg-white p-6 shadow-md hover:shadow-xl mb-8">
+                <div class="w-32 h-32 flex-none mr-3 sm:mr-5">
+                    <img class="object-center object-contain h-32 rounded" src="{{ .Params.img }}" alt="{{ .Params.img_alt}}">
+                </div>
+                <div class="text-center">
+                    <h2 class="text-lg">{{ .Params.title }}</h2>
+                </div>
+            </div>
+        </a>
+        {{ end }}
+      </div>
+  </div>
+</main>
+{{ end }}

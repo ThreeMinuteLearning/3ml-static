@@ -2,6 +2,15 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer base {
+    h4 {
+        @apply text-xl my-2;
+    }
+    p {
+        @apply mb-1;
+    }
+}
+
 body {
   background-image: url('https://3ml.org.uk/img/nebula.jpg');
   background-size: cover;
@@ -9,6 +18,7 @@ body {
   /* get rid of unwanted horizontal scrollbar */
   overflow-x: hidden;
 }
+
 
 /* Menu-toggle button */
 .menu {
