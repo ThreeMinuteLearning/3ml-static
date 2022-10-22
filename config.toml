@@ -4,7 +4,9 @@ title = '3ml - Three Minute Learning'
 
 [params]
   description = "Improving literacy and science learning in schools"
-
+  # Set HUGO_PARAMS_cdn to override
+  # e.g. HUGO_PARAMS_cdn=https://somewhereonline.blah
+  cdn = ""
 
 [menu]
 [[menu.main]]

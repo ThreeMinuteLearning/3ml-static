@@ -1,5 +1,7 @@
 node_modules/
 public/
+static/pix
+static/thumbs
 /resources/
 _vendor/
 package-lock.json
