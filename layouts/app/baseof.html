@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+{{- $elm := resources.Get "js/app.js" }}
+{{- $3ml := resources.Get "js/3ml.js" }}
+{{- $js := slice $elm $3ml | resources.Concat "js/app.js" -}}
+
+{{- if .Site.IsServer }}
+  <script src="{{ $js.RelPermalink }}"></script>
+{{- else }}
+  {{- $js := $js | resources.Fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{- end }}
+  </body>
+</html>

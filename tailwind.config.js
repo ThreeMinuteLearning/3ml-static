@@ -8,6 +8,7 @@ module.exports = {
       './content/**/*.md',
       './content/**/*.html',
       './content/**/*.js',
+      './assets/js/*.js',
       './_vendor/**/*.html'
     ],
   },
@@ -22,6 +23,8 @@ module.exports = {
       colors: {
         'tml-blue': '#2696a8',
         'teal-100': '#e6fffa',
+        'teal-200': '#b2f5ea',
+        'teal-700': '#2c7a7b',
       }
     }
   },

@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "app.css"
 
 @layer base {
     h4 {
@@ -12,7 +13,7 @@
 }
 
 body {
-  background-image: url('https://3ml.org.uk/img/nebula.jpg');
+  background-image: url('../images/nebula.jpg');
   background-size: cover;
   background-attachment: fixed;
   /* get rid of unwanted horizontal scrollbar */

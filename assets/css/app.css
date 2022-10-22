@@ -1,0 +1,179 @@
+
+@media print {
+    .print\:none, .hidden-print {
+        display: none;
+    }
+    .print\:text-sm {
+        font-size: .875rem;
+    }
+}
+
+/* Password strength */
+
+#password-strength-meter {
+    width: 100%;
+    margin: 0 auto 0;
+    height: 0.5em;
+
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Webkit based browsers */
+meter[value="1"]::-webkit-meter-optimum-value { background: red; }
+meter[value="2"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: green; }
+
+/* Gecko based browsers */
+meter[value="1"]::-moz-meter-bar { background: red; }
+meter[value="2"]::-moz-meter-bar { background: yellow; }
+meter[value="3"]::-moz-meter-bar { background: orange; }
+meter[value="4"]::-moz-meter-bar { background: green; }
+
+/* Tables */
+
+/* Make sortable table icons more obvious */
+.sortable-table {
+    width: 100%;
+}
+
+.sortable-table th {
+    cursor: pointer;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.sortable-table th span {
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+.sortable-table td {
+    border-top: 1px solid #ddd;
+    padding: 0.5rem;
+    vertical-align: top;
+}
+
+/* Story content styling */
+#storycontent a {
+    color: #4299e1;
+}
+
+#storycontent a:hover {
+    color: #3182ce;
+}
+
+#storycontent p {
+    margin-bottom: 0.75rem;
+}
+
+#storycontent ul {
+    list-style-type: disc;
+    padding-left: theme('padding.8');
+}
+
+#storycontent ol {
+    list-style-type: decimal;
+    padding-left: theme('padding.8');
+}
+
+#printactivities h4 {
+    margin-bottom: 6em;
+    font-weight: bold;
+}
+
+/* The drawer */
+
+#drawerbuttons button:hover {
+    border-radius: 50%;
+}
+
+#drawer {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100%;
+    width: 300px;
+    transition: .25s ease-in-out;
+    color: white;
+}
+
+#toggle-drawer {
+    position: absolute;
+    opacity: 0;
+}
+
+#toggle-drawer:checked ~ #drawer {
+    left: 0px;
+}
+
+.dict-lookup {
+    cursor: pointer;
+}
+
+.dict-defintion {
+    overflow: hidden;
+    width: 100%;
+}
+
+.dict-definition p {
+    animation: 1s slide-left;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* Styling for elm-select */
+
+.elm-select-input-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.elm-select-menu {
+    border: 1px solid #ccc;
+    border-top: 0;
+    color: #444;
+    padding: 0.2em 0.8em;
+
+}
+
+.elm-select-multi-input-item {
+    padding: 0.3em;
+}
+
+/* Story fade-in animation */
+
+.u-selectable:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.u-fade-in {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    animation: fadeIn 0.7s linear forwards, slideDown 3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    to {
+        max-height: 2400px;
+    }
+}
