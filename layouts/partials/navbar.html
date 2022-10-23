@@ -18,11 +18,11 @@
               {{- if eq $url "/resources/" }}
                   {{ $url = "/resources/curriculum-for-excellence/" }}
               {{- end }}
-              {{- $base_style := "block mt-4 md:inline-block md:mt-0 text-lg text-teal-100 hover:text-white mr-4 md:border-b-2"}}
+              {{- $base_style := "block mt-4 md:inline-block md:mt-0 text-lg text-gray-100 hover:text-white mr-4 md:border-b-2"}}
               {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-              <a class="{{ $base_style }} border-white-600 text-gray-900" href="#">{{ .Name }}</a>
+              <a class="{{ $base_style }} border-white text-white" href="#">{{ .Name }}</a>
               {{- else }}
-              <a class="{{ $base_style}} border-transparent hover:border-gray-300" href="{{ $url }}">{{ .Name }}</a>
+              <a class="{{ $base_style}} border-transparent hover:border-gray-100" href="{{ $url }}">{{ .Name }}</a>
               {{- end }}
           {{ end }}
       </div>
