@@ -14,3 +14,18 @@ title = '3ml - Three Minute Learning'
   name = "Resources"
   pageRef = "/resources"
   weight = 30
+[[menu.main]]
+  id = "resources"
+  name = "Resources"
+  pageRef = "/resources"
+  weight = 30
+[[menu.main]]
+  id = "signin"
+  name = "Sign in"
+  url = "/app/#login"
+  weight = 60
+[[menu.main]]
+  id = "signup"
+  name = "Sign up"
+  url = "/app/#register"
+  weight = 70
