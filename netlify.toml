@@ -1,0 +1,16 @@
+[build]
+    command = "hugo --gc --minify"
+    publish = "public"
+
+[build.environment]
+    HUGO_VERSION = "0.104.3"
+    HUGO_ENVIRONMENT = "production"
+    HUGO_ENABLEGITINFO = "true"
+
+[[headers]]
+    for = "/*"
+    [headers.values]
+        X-Frame-Options = "DENY"
+        Referrer-Policy = "no-referrer"
+        X-Content-Type-Options = "nosniff"
+        Content-Security-Policy = "default-src 'self' https://api.3ml.org.uk https://api.pwnedpasswords.com; script-src 'self' https://api.pwnedpasswords.com; style-src 'self'; img-src https:; media-src https:; object-src 'none';"
