@@ -6,3 +6,6 @@ static/thumbs
 _vendor/
 package-lock.json
 .hugo_build.lock
+
+# Local Netlify folder
+.netlify

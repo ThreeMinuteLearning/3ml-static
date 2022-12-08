@@ -8,8 +8,17 @@
     HUGO_ENABLEGITINFO = "true"
 
 [[headers]]
+    for = "*.webp"
+    [headers.values]
+        Cache-Control = "public, max-age=1209600"
+[[headers]]
+    for = "*.png"
+    [headers.values]
+        Cache-Control = "public, max-age=1209600"
+[[headers]]
     for = "/*"
     [headers.values]
+        Cache-Control = "public, max-age=86400"
         X-Frame-Options = "DENY"
         Referrer-Policy = "no-referrer"
         X-Content-Type-Options = "nosniff"
