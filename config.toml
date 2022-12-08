@@ -2,6 +2,9 @@
 languageCode = 'en-gb'
 title = '3ml - Three Minute Learning'
 
+# Disable categories and tags
+disableKinds = ["taxonomy", "term", "RSS"]
+
 [params]
   description = "Improving literacy and science learning in schools"
   # Set HUGO_PARAMS_cdn to override
