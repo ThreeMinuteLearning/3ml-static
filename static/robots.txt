@@ -1,0 +1,18 @@
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /app/
+
+User-agent: GoogleBot
+Allow: /
+Disallow: /app/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /app/
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /app/
+
+User-agent: *
+Disallow: /
