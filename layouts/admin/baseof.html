@@ -6,9 +6,10 @@
   <body>
 {{- $vega := resources.Get "js/vega-5.25.0.js" }}
 {{- $vegaLite := resources.Get "js/vega-lite-5.14.1.js" }}
+{{- $vegaEmbed := resources.Get "js/vega-embed-6.22.2.js" }}
 {{- $elm := resources.Get "js/admin.js" }}
 {{- $3ml := resources.Get "js/3ml-admin.js" }}
-{{- $js := slice $vega $vegaLite $elm $3ml | resources.Concat "js/admin.js" -}}
+{{- $js := slice $vega $vegaLite $vegaEmbed $elm $3ml | resources.Concat "js/admin.js" -}}
 
 {{- if .Site.IsServer }}
   <script src="{{ $js.RelPermalink }}"></script>
