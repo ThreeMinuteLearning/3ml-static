@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+{{- $vega := resources.Get "js/vega-5.25.0.js" }}
+{{- $vegaLite := resources.Get "js/vega-lite-5.14.1.js" }}
+{{- $elm := resources.Get "js/admin.js" }}
+{{- $3ml := resources.Get "js/3ml-admin.js" }}
+{{- $js := slice $vega $vegaLite $elm $3ml | resources.Concat "js/admin.js" -}}
+
+{{- if .Site.IsServer }}
+  <script src="{{ $js.RelPermalink }}"></script>
+{{- else }}
+  {{- $js := $js | resources.Fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{- end }}
+  </body>
+</html>
