@@ -1,41 +1,40 @@
 {{ define "main" }}
 <div class="flex flex-wrap">
-    <h1 class="shadow-md w-full text-lg text-green-100 tracking-wide text-center bg-green-600 my-3 p-2">
-        Three Minute Learning is a social enterprise set up to improve literacy and promote real science in schools.
+    <h1 class="shadow-md mb-6 w-full font-medium text-2xl text-green-100 tracking-wide text-center bg-green-600 p-2">
+        Three Minute Learning helps develop literacy skills and promotes real science
     </h1>
+    <blockquote class="w-full mb-6 p-3 md:px-6 text-center md:text-left space-y-2 text-lg font-medium shadow rounded">
+      <p class="italic">"What I like most is the genuine connection between skills for reading and scientific concepts and language."</p>
+      <p><span class="font-bold">Sophie Davies</span>, Twyford Primary School</p>
+    </blockquote>
+    <h2 class="shadow-md mb-6 md:mb-1 lg:mb-6 w-full font-medium text-lg text-green-100 tracking-wide text-center bg-green-600 p-2">
+        How 3ml works
+    </h2>
     {{- $image := resources.Get "images/timthumbs.jpg" }}
     {{- $image = $image.Resize "800x webp"}}
-    <video controls class="w-full md:w-1/2 mb-4" poster="{{ $image.RelPermalink }}">
+    <video controls class="w-full md:w-1/2 mb-6" poster="{{ $image.RelPermalink }}">
         <source src="https://www.realscience.org.uk/3ml/vids/timpeake.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <!-- Intro-->
-    <div class="text-lg text-justify w-full px-4 md:w-1/2 mt-1 mb-4">
+    <div class="w-full md:w-1/2 mt-1 mb-6 md:p-6 text-lg text-justify">
         <p class="mb-3">
-            <span class="font-bold">3ml</span> works like this:
-        </p>
-        <p class="mb-3">
-            First your pupils read a very short story, chosen - by you or them - from over 1000 in our library.
+            First your learners read a very short story, chosen - by you or them - from over 1000 in our library.
             Then they complete four activities to help them understand and remember what they've read.
         </p>
-        <p>
-            If you haven't used 3ml before with your pupils, please take a look at the short videos on our Guidance
-            page.
-        </p>
+        <p>If you haven't used 3ml before, please take a look at the short videos on our <a href="/guidance/">Guidance page</a>.</p>
     </div>
-    <!-- Sign up Banner -->
-    <div class="w-full mb-3 h-32">
+    <div class="w-full mb-6 h-40">
         <a class="relative block w-full h-full text-gray-100 hover:text-gray-400" href="/app/#/register" target="_blank">
             <img class="inline-block object-top object-cover h-full w-full rounded" src="https://images.nasa.gov/images/landing_bg.jpg" alt="stars">
-            <div class="absolute inset-0 tracking-wider text-center mt-4">
-                <h1 class="text-2xl bold">Sign up and try it out!</h1>
-                <p class="text-lg mt-1">
-                    3ml is free to all SSERC member schools.
-                </p>
+            <div class="absolute inset-0 tracking-wider text-center mt-10">
+                <div class="text-2xl bold">Sign up and try it out!</div>
+                <p class="text-xl mt-1">3ml is free to use!</p>
             </div>
         </a>
     </div>
-    <!-- Sample Stories-->
+    <div class="mb-6 text-xl">
+        <p class="text-xl">If you are home educating and looking for help with literacy and STEM please contact us at <a href="mailto:admin@three-minute-learning.org">admin@three-minute-learning.org</a></p>
+    </div>
     {{- $cdn := $.Site.Params.cdn }}
     <div id="storytiles" class="flex flex-wrap w-full -mx-1">
         <div class="w-1/2 md:w-1/4 mb-2 h-32 lg:h-40 px-1">
