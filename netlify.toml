@@ -7,6 +7,18 @@
     HUGO_ENVIRONMENT = "production"
     HUGO_ENABLEGITINFO = "true"
 
+[[redirects]]
+    from = "/"
+    to = "https://my3ml.org"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/resources/*"
+    to = "https://my3ml.org/resources/:splat"
+    status = 301
+    force = true
+
 [[headers]]
     for = "/*"
     [headers.values]
